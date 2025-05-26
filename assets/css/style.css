@@ -1,0 +1,214 @@
+/* Custom CSS for Lab Equipment Inventory System */
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 70px; /* For footer space */
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.card-title {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Tables */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-text {
+    color: #6c757d;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    background-color: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Badges */
+.badge {
+    padding: 5px 8px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/* Dashboard */
+.dashboard-card {
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Stats */
+.stats-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.stats-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+/* Login and Register Pages */
+.login-container, .register-container {
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.login-card, .register-card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Custom Alerts */
+.alert {
+    border-radius: 4px;
+    border-left-width: 4px;
+}
+
+.alert-success {
+    border-left-color: #198754;
+}
+
+.alert-danger {
+    border-left-color: #dc3545;
+}
+
+.alert-warning {
+    border-left-color: #ffc107;
+}
+
+.alert-info {
+    border-left-color: #0dcaf0;
+}
+
+/* Equipment Status */
+.status-new {
+    color: #198754;
+}
+
+.status-good {
+    color: #0d6efd;
+}
+
+.status-fair {
+    color: #fd7e14;
+}
+
+.status-poor {
+    color: #dc3545;
+}
+
+.status-maintenance {
+    color: #6c757d;
+}
+
+.status-disposed {
+    color: #212529;
+}
+
+/* Details Page */
+.detail-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+    font-size: 0.8em;
+}
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    body {
+        padding-bottom: 0;
+    }
+    
+    .card {
+        border: 1px solid #dee2e6;
+        box-shadow: none;
+    }
+} 
